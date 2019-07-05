@@ -3,4 +3,4 @@ nav:
     - Home: index.md
     - Niftybot: /niftybot
     - SMF Mods: /smf
-theme: readthedocs
+theme: cinder
