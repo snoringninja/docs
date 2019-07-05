@@ -4,4 +4,6 @@ nav:
     - Home: index.md
     - Niftybot: niftybot
     - SMF Mods: smf
-theme: cinder
+theme: material
+markdown_extensions:
+  - admonition
