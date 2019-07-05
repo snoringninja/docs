@@ -1,4 +1,5 @@
 site_name: Snoring Ninja Documentation
+site_url: https://snoring.ninja/docs/
 nav:
     - Home: index.md
     - Niftybot: niftybot
