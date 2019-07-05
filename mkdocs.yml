@@ -1,6 +1,6 @@
 site_name: Snoring Ninja Documentation
 nav:
     - Home: index.md
-    - Niftybot: /niftybot
-    - SMF Mods: /smf
+    - Niftybot: niftybot
+    - SMF Mods: smf
 theme: cinder
