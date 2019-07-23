@@ -6,6 +6,6 @@ nav:
     - Home: index.md
     - Niftybot: niftybot
     - SMF Mods: smf
-theme: material
+theme: readthedocs
 markdown_extensions:
   - admonition
