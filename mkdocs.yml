@@ -1,5 +1,5 @@
 site_name: Snoring Ninja Documentation
-site_url: https://snoring.ninja/docs/
+site_url: https://docs.snoring.ninja
 docs_dir: src
 site_dir: docs
 nav:
