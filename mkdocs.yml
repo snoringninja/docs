@@ -3,9 +3,16 @@ site_url: https://docs.snoring.ninja
 docs_dir: src
 site_dir: docs
 nav:
-    - Home: index.md
-    - Niftybot: niftybot
-    - SMF Mods: smf
+    - Home: index
+    - Niftybot:
+        - 'Niftybot Home': 'niftybot'
+        - 'Server Config Example': 'niftybot/server_config_example.md'
+        - Cogs: 'niftybot/cogs/index.md'
+    - SMF Mods:
+        - 'SMF Home': 'smf'
+        - 'Weighted Karma': 'smf/weighted_karma.md'
+        - 'Custom Title Limit': 'smf/custom_title_limits.md'
 theme: readthedocs
 markdown_extensions:
   - admonition
+  - def_list

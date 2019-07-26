@@ -1,7 +1,14 @@
 Custom Title Limit for SMF 2.0.x
 ===
-###### By [Snoring Ninja](https://snoring.ninja)
-### Set a limit on custom title length
+---
+###### Current Release: 1.0.0
+###### By: [Snoring Ninja](https://snoring.ninja)  
+
+---
+
+This mod allows you to set limits on the length of custom titles that users
+may have in the system.  Please note that there are two different versions of
+this mod, with the differences noted below.
 
 #### There are two different versions of this mod:
 * CustomTitleDB
