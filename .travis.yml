@@ -1,22 +1,23 @@
 language: python
-
 python: 3.6
-
 branches: master
 
+env:
+  global:
+    secure: "O0e4YC+/jw21vcM3fzyWT5CPf9sIbNxK7AJMqJucKgvpVgRa4RPx+YcZuLaijAjCQN4Nt+79cxWUPGQdvQHguUWhxdxYMfmfYYyWM5HK0mibeJcmRCvrrS5OVEMxCGJqSFZSP9kR1ielikI9WJbrEdPD/a7ILhytoil8f9r4lhcNKFPTgBytExFdcC55vdf576/H8TmvxCdbvmNLHdEDgb/UlK03C/UVLScYs+hPvDTXL18vCAGffX/IS5vztIfPekBe+ZCG/ryxDLZES/DfnDKIXGQlPHQPbbcSGa4FNYprSEewHxYulFMYjUdZVqS5h7jKWiU9EoICWu4pesGL66aj8LPivmczvB5uxuSGH0HM8QuyfhBchcnZbJbMd6zOZRgF8XS3qcvDCWG0gNs7kkWscNmRf0t+cDYOlVbH8dt5IkMR+A5upiUyAT+ClNvafNyGadj9oy8ZCiUJXIPzFzWcEl46wntXz6AMZGB7NjfNLGh4GTKvmCLS1RPssCV70MkrRvXnkYRPmjJXIamkxoh0vbRRzecQ0aH6fhpzpN7L6Dk1mxG8zaORiTuyiVMj9qosyia8wDz3P0XI9oCz8MEXlCnNu8LlYOC8Dka3rxrAiEdNA8ofHty3tyFGcIUoFRqFl6bFQpxh1xvrcDkEIgcU4DiDZTDTPzXOnVsjS9g="
+
 before_install:
-    - openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv -in deploy-key.enc -out deploy-key -d
+- openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv -in deploy-key.enc -out deploy-key -d
 
 install:
     - pip install mkdocs
-
 script:
     - mkdocs build
 
 deploy:
-    provider: pages
-    skip_cleanup: true
-    local_dir: docs
-    on:
-        branch: master
-    fqdn: docs.snoring.ninja
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs
+  on:
+    branch: master
+  fqdn: docs.snoring.ninja
