@@ -26,7 +26,7 @@
 **Returns**: Nothing
 
 **Examples**:
-```
+```nohighlight
 guild Test
 {user.mention}: You've been successfully added to {guild_name}.
 
@@ -50,7 +50,7 @@ guild Test
 **Returns**: Nothing
 
 **Examples**:  
-```
+```nohighlight
 > role add Test
 Configuration file updated.
 
@@ -80,7 +80,7 @@ executed via the `rolechannel` command.
 **Returns**: Nothing
 
 **Examples**:  
-```
+```nohighlight
 > rolechannel add 1234567890
 Configuration file updated.
 
