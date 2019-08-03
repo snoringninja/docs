@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Weighted Karma - Snoring Ninja Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Weighted Karma";
+    var mkdocs_page_input_path = "smf/weighted_karma.md";
+    var mkdocs_page_url = "/smf/weighted_karma/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Snoring Ninja Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../index">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Niftybot</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../niftybot">Niftybot Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../niftybot/server_config_example/">Server Config Example</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../niftybot/cogs/">Cogs</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SMF Mods</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="..">SMF Home</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Weighted Karma</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#karmarep-weight-system">Karma/Rep Weight System</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#current-release-151">Current Release: 1.5.1</a></li>
+        
+            <li><a class="toctree-l4" href="#by-snoring-ninja">By: Snoring Ninja</a></li>
+        
+            <li><a class="toctree-l4" href="#weighted-karma">Weighted Karma</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../custom_title_limits/">Custom Title Limit</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Snoring Ninja Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SMF Mods &raquo;</li>
+        
+      
+    
+    <li>Weighted Karma</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="karmarep-weight-system">Karma/Rep Weight System</h1>
+<hr />
+<h6 id="current-release-151">Current Release: 1.5.1</h6>
+<h6 id="by-snoring-ninja">By: <a href="https://snoring.ninja">Snoring Ninja</a></h6>
+<hr />
+<p>This mod does a few different things, all of which can be ignored and not enabled.
+* Provides a weighted system for giving reputation only (taking reputation is always one)
+* Limit the amount of karma to go along with weight to prevent outrageous amounts of karma being given
+* Option in Admin &gt; Maintenance &gt; Forum Maintenance &gt; Routine to reset all user good karma to a set level while setting 
+negative karma to 0
+* Instead of using post count for determining when a user can give reputation, use the user's current reputation to 
+decide
+* "Pool" the Karma to prevent any new karma from being added to the game; more information can be found by clicking the 
+help icon next to the option</p>
+<h2 id="weighted-karma">Weighted Karma</h2>
+<p>Weighted karma is a simple idea: take a user's karma and divide by the weight set in the admin panel to give that amount 
+of karma instead of 1. So, if the weight is 15 and a user has 200 karma, they would give 13 karma.  I did not add 
+weight to negative karma, as I am against that.  The weight system comes with two options.</p>
+<ul>
+<li>Weight to divide by</li>
+<li>Max amount that can be given (prevents outrageous amounts)</li>
+</ul>
+<h3 id="give-karma-based-on-user-karma-not-post-count">Give Karma Based on User Karma, Not Post Count</h3>
+<p>One gripe I have with SMF's karma is that it relies on post count when determining if a user is able to give karma. 
+To go around this, I decided that I would rather use a person's karma count to determine whether or not a user is able 
+to give karma.  This works just like it sounds and if the option is enabled it ignores the post count option and uses a 
+user's karma count. The message box can be left blank for a default message if a user without enough karma attempts to 
+give another user karma.  Setting a message here will be shown in place of the default message.</p>
+<h3 id="pooled-karma">"Pooled Karma"</h3>
+<p>“Pooled” Karma System: no new karma is ever introduced into the community after the initial karma is set 
+(i.e. giving certain users enough karma to give karma a few times). This new system works in a manner that when a 
+user gives karma, they also lose the amount they give. For example, if I have 200 karma and it’s weighted by 50 I can 
+give four karma. When I decide to give karma, not only I increase the recipients karma by four, but I also lose four 
+karma for a total of 196 following the giving of karma.</p>
+<h3 id="21-support">2.1 Support</h3>
+<p>Right now, this won't work on 2.1, mostly because 2.1 did away with the karma system. There are no longer any plans to 
+for us to bother readding karma into the system; however, someone did port the karma system to 2.1, so you could always 
+find that and implement the features from this mod into that.</p>
+<p>This mod is released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+<p>Questions/Comments/Concerns:</p>
+<ul>
+<li>Post in the SMF support thread <a href="https://www.simplemachines.org/community/index.php?topic=527025.0">here</a>.</li>
+<li>Issues, please post an issue through GitHub</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../custom_title_limits/" class="btn btn-neutral float-right" title="Custom Title Limit">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../niftybot/cogs/" class="btn btn-neutral" title="Cogs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../niftybot/cogs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../custom_title_limits/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Role Assignment - Snoring Ninja Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Role Assignment";
+    var mkdocs_page_input_path = "niftybot/cogs/role_assignment.md";
+    var mkdocs_page_url = "/niftybot/cogs/role_assignment/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Snoring Ninja Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../index">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Niftybot</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Niftybot Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../server_config_example/">Server Config Example</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../">Cogs</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SMF Mods</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../smf">SMF Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../smf/weighted_karma/">Weighted Karma</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../smf/custom_title_limits/">Custom Title Limit</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Snoring Ninja Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Role Assignment</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Remember all commands must be prefixed by whatever prefix is set in the niftybot.ini file.</p>
+</div>
+<hr />
+<h2 id="roleassignor">RoleAssignor</h2>
+<p><em>class</em> cogs.role_assignment.RoleAssignor(<em>bot</em>)</p>
+<blockquote>
+<p>Handles commands for adding or removing a role, adding or removing a channel, or adding a user to a configured role</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title"><strong>TODO</strong></p>
+<p>Allow owners to add roles/channels simply by passing in the name of the role or channel instead of requiring 
+them to use the snowflake ID; if there happens to be more than one of either, then require the owner to use the 
+specific ID</p>
+</div>
+<hr />
+<h3 id="assign_role">assign_role</h3>
+<p><em>command</em> <strong>assign_role</strong>(<em>ctx, guild, member</em>)</p>
+<blockquote>
+<p>Assign users to a configured role if requested.  Command is executed via the <code>guild</code> command.</p>
+</blockquote>
+<ul>
+<li><strong>Parameters</strong>:<ul>
+<li><strong>ctx</strong> - discord.py Context object  </li>
+<li><strong>guild</strong> (str) -  the requested group name, uses consume rest behavior</li>
+<li><strong>member</strong> - optional discord.Member object</li>
+</ul>
+</li>
+</ul>
+<p><strong>Returns</strong>: Nothing</p>
+<p><strong>Examples</strong>:</p>
+<pre><code class="nohighlight">guild Test
+{user.mention}: You've been successfully added to {guild_name}.
+
+guild Test
+{user.mention}: You've been removed from {guild_name}.
+</code></pre>
+
+<hr />
+<h3 id="update_role_list">update_role_list</h3>
+<p><em>command</em> <strong>update_role_list</strong>(<em>ctx, add_or_remove, role_id, member</em>)</p>
+<blockquote>
+<p>Update the role list within the server configuration file to add or remove a group. Command is executed via the 
+<code>role</code> command.</p>
+</blockquote>
+<ul>
+<li><strong>Parameters</strong>:  <ul>
+<li><strong>ctx</strong>: discord.py Context object  </li>
+<li><strong>add_or_remove</strong> (str) [add, remove] - passed in string to determine if a role is being added or removed  </li>
+<li><strong>role_id</strong> (str) - discord snowflake ID for the role, can be added via direct pinging of the role  </li>
+<li><strong>member</strong> - optional discord.Member object</li>
+</ul>
+</li>
+</ul>
+<p><strong>Returns</strong>: Nothing</p>
+<p><strong>Examples</strong>:  </p>
+<pre><code class="nohighlight">&gt; role add Test
+Configuration file updated.
+
+&gt; role add Test
+Role already added.
+
+&gt; role test Test
+Please specify if I am adding or removing a role.
+
+&gt; role remove Test
+Configuration file updated.
+</code></pre>
+
+<hr />
+<h3 id="update_channel_list">update_channel_list</h3>
+<p><em>command</em> <strong>update_channel_list</strong>(<em>ctx, add_or_remove, channel_id, member</em>)</p>
+<blockquote>
+<p>Update the configured channel list to add or remove a channel where the guild command can be used.  Command is 
+executed via the <code>rolechannel</code> command.</p>
+</blockquote>
+<ul>
+<li><strong>Parameters</strong>:  <ul>
+<li><strong>ctx</strong>: discord.py Context object  </li>
+<li><strong>add_or_remove</strong> (str) [add, remove] - passed in string to determine if a channel is being added or removed  </li>
+<li><strong>role_id</strong> (str) - discord snowflake ID for the channel, requires the direct ID and cannot be added via pinging</li>
+<li><strong>member</strong> - optional discord.Member object</li>
+</ul>
+</li>
+</ul>
+<p><strong>Returns</strong>: Nothing</p>
+<p><strong>Examples</strong>:  </p>
+<pre><code class="nohighlight">&gt; rolechannel add 1234567890
+Configuration file updated.
+
+&gt; rolechannel add 1234567890
+Role already added.
+
+&gt; rolechannel test 1234567890
+Please specify if I am adding or removing a channel.
+
+&gt; rolechannel remove 1234567890
+Configuration file updated.
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

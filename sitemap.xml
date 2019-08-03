@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.snoring.ninja/niftybot/server_config_example/</loc>
+     <lastmod>2019-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.snoring.ninja/niftybot/cogs/</loc>
+     <lastmod>2019-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.snoring.ninja/smf/weighted_karma/</loc>
+     <lastmod>2019-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.snoring.ninja/smf/custom_title_limits/</loc>
+     <lastmod>2019-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
