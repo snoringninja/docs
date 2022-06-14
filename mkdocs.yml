@@ -1,5 +1,4 @@
 site_name: Snoring Ninja Documentation
-site_url: https://docs.snoring.ninja/
 docs_dir: src/
 site_dir: docs/
 nav:
@@ -7,7 +6,7 @@ nav:
     - Niftybot:
         - 'Niftybot Home': 'niftybot'
         - 'Server Config Example': 'niftybot/server_config_example.md'
-        - Cogs: 'niftybot/cogs/index.md'
+        - 'Cogs': 'niftybot/cogs/index.md'
     - SMF Mods:
         - 'SMF Home': 'smf'
         - 'Weighted Karma': 'smf/weighted_karma.md'
