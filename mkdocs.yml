@@ -12,7 +12,8 @@ nav:
         - 'SMF Home': 'smf'
         - 'Weighted Karma': 'smf/weighted_karma.md'
         - 'Custom Title Limit': 'smf/custom_title_limits.md'
-theme: readthedocs
+theme:
+name: readthedocs
 markdown_extensions:
   - admonition
   - def_list
