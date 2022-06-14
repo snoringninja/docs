@@ -19,7 +19,7 @@
     // Current page data
     var mkdocs_page_name = "Logout";
     var mkdocs_page_input_path = "niftybot\\cogs\\logout.md";
-    var mkdocs_page_url = "/niftybot/cogs/logout/";
+    var mkdocs_page_url = null;
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js" defer></script>
@@ -50,7 +50,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../../index">Home</a>
+    <a class="" href="../../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -59,15 +59,41 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../..">Niftybot Home</a>
+    <a class="" href="../../">Niftybot Home</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../server_config_example/">Server Config Example</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../">Cogs</a>
+    <span class="caption-text">Cogs</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../">Cogs Home</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Logout</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#logout">Logout</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#logout_1">Logout</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../role_assignment/">Role Assignment</a>
+                </li>
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -78,7 +104,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../smf">SMF Home</a>
+    <a class="" href="../../../smf/">SMF Home</a>
                 </li>
                 <li class="">
                     
@@ -111,6 +137,14 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>Cogs &raquo;</li>
+        
+      
+        
+          <li>Niftybot &raquo;</li>
+        
       
     
     <li>Logout</li>
@@ -152,15 +186,15 @@ bot does not restart, which is something that can be configured when using syste
 <hr />
 <h3 id="logout_2">logout</h3>
 <p><em>command</em> <strong>logout</strong>(<em>ctx</em>)  </p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>This function is designed to log the bot out depending on the environment in use.  It still 
-makes use of the logout functionality built right into discord.py, but with an extra step if using a linux 
-environment.  </p>
-<p>It is important to note that the systemd_logout functionality won't work if the user/group the bot is running under 
-requires authentication to run the following: systemctl stop SERVICENAME  </p>
-<p><strong>Please keep that in mind.</strong></p>
-</div>
+<p>!!! important
+    This function is designed to log the bot out depending on the environment in use.  It still 
+    makes use of the logout functionality built right into discord.py, but with an extra step if using a linux 
+    environment.  </p>
+<pre><code>It is important to note that the systemd_logout functionality won't work if the user/group the bot is running under 
+requires authentication to run the following: systemctl stop SERVICENAME
+
+**Please keep that in mind.**
+</code></pre>
 <ul>
 <li><strong>Parameters</strong>:<ul>
 <li><strong>ctx</strong>: discord.py Context object  </li>
@@ -172,6 +206,15 @@ requires authentication to run the following: systemctl stop SERVICENAME  </p>
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../role_assignment/" class="btn btn-neutral float-right" title="Role Assignment">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral" title="Cogs Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -195,6 +238,10 @@ requires authentication to run the following: systemctl stop SERVICENAME  </p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../role_assignment/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

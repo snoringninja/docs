@@ -19,7 +19,7 @@
     // Current page data
     var mkdocs_page_name = "Role Assignment";
     var mkdocs_page_input_path = "niftybot\\cogs\\role_assignment.md";
-    var mkdocs_page_url = "/niftybot/cogs/role_assignment/";
+    var mkdocs_page_url = null;
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js" defer></script>
@@ -50,7 +50,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../../index">Home</a>
+    <a class="" href="../../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -59,15 +59,41 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../..">Niftybot Home</a>
+    <a class="" href="../../">Niftybot Home</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../../server_config_example/">Server Config Example</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../">Cogs</a>
+    <span class="caption-text">Cogs</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../">Cogs Home</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../logout/">Logout</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Role Assignment</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#role-assignment">Role Assignment</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#roleassignor">RoleAssignor</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -78,7 +104,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../smf">SMF Home</a>
+    <a class="" href="../../../smf/">SMF Home</a>
                 </li>
                 <li class="">
                     
@@ -112,6 +138,14 @@
     <li><a href="../../..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Cogs &raquo;</li>
+        
+      
+        
+          <li>Niftybot &raquo;</li>
+        
+      
     
     <li>Role Assignment</li>
     <li class="wy-breadcrumbs-aside">
@@ -123,22 +157,19 @@
           <div role="main">
             <div class="section">
               
-                <div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Remember all commands must be prefixed by whatever prefix is set in the niftybot.ini file.</p>
-</div>
+                <h1 id="role-assignment">Role Assignment</h1>
+<p>!!! important
+    Remember all commands must be prefixed by whatever prefix is set in the niftybot.ini file.</p>
 <hr />
 <h2 id="roleassignor">RoleAssignor</h2>
 <p><em>class</em> cogs.role_assignment.RoleAssignor(<em>bot</em>)</p>
 <blockquote>
 <p>Handles commands for adding or removing a role, adding or removing a channel, or adding a user to a configured role</p>
 </blockquote>
-<div class="admonition warning">
-<p class="admonition-title"><strong>TODO</strong></p>
-<p>Allow owners to add roles/channels simply by passing in the name of the role or channel instead of requiring 
-them to use the snowflake ID; if there happens to be more than one of either, then require the owner to use the 
-specific ID</p>
-</div>
+<p>!!! warning "<strong>TODO</strong>"
+    Allow owners to add roles/channels simply by passing in the name of the role or channel instead of requiring 
+    them to use the snowflake ID; if there happens to be more than one of either, then require the owner to use the 
+    specific ID</p>
 <hr />
 <h3 id="assign_role">assign_role</h3>
 <p><em>command</em> <strong>assign_role</strong>(<em>ctx, guild, member</em>)</p>
@@ -228,6 +259,15 @@ Configuration file updated.
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../smf/" class="btn btn-neutral float-right" title="SMF Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../logout/" class="btn btn-neutral" title="Logout"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -250,6 +290,10 @@ Configuration file updated.
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../logout/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../../smf/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -1,17 +1,21 @@
 site_name: Snoring Ninja Documentation
-docs_dir: src/
-site_dir: docs/
+docs_dir: src
+site_dir: docs
 nav:
-    - Home: 'index'
+    - Home: 'index.md'
     - Niftybot:
-        - 'Niftybot Home': 'niftybot'
+        - 'Niftybot Home': 'niftybot/index.md'
         - 'Server Config Example': 'niftybot/server_config_example.md'
-        - 'Cogs': 'niftybot/cogs/index.md'
+        - Cogs: 
+            - 'Cogs Home': 'niftybot/cogs/index.md'
+            - 'Logout': 'niftybot/cogs/logout.md'
+            - 'Role Assignment': 'niftybot/cogs/role_assignment.md'
     - SMF Mods:
-        - 'SMF Home': 'smf'
+        - 'SMF Home': 'smf/index.md'
         - 'Weighted Karma': 'smf/weighted_karma.md'
         - 'Custom Title Limit': 'smf/custom_title_limits.md'
 theme: readthedocs
 markdown_extensions:
-  - admonition
   - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
