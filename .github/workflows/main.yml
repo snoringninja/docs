@@ -1,25 +1,15 @@
-name: Converted Workflow
-'on':
+name: build
+on:
   push:
     branches:
-      - master
-  pull_request:
-    branches:
-      - master
+      - main
 jobs:
-  Build:
-    runs-on: '${{ matrix.os }}'
-    strategy:
-      matrix:
-        os:
-          - ubuntu-18.04
-        python-version:
-          - 3.6
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: 'Set up Python ${{ matrix.python-version }}'
-        uses: actions/setup-python@v2
-        with:
-          python-version: '${{ matrix.python-version }}'
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
       - run: pip install mkdocs
-      - run: mkdocs build
+      - run: mkdocs gh-deploy --force --clean --verbose
