@@ -5,12 +5,12 @@ Karma/Rep Weight System
 ###### By: [Snoring Ninja](https://snoring.ninja)
 ---
 
-This mod does a few different things, all of which can be ignored and not enabled.
-* Provides a weighted system for giving reputation only (taking reputation is always one)
-* Limit the amount of karma to go along with weight to prevent outrageous amounts of karma being given
-* Option in Admin > Maintenance > Forum Maintenance > Routine to reset all user good karma to a set level while setting negative karma to 0
-* Instead of using post count for determining when a user can give reputation, use the user's current reputation to decide
-* "Pool" the Karma to prevent any new karma from being added to the game; more information can be found by clicking the help icon next to the option
+This mod does a few different things, all of which can be ignored and not enabled.  
+* Provides a weighted system for giving reputation only (taking reputation is always one)  
+* Limit the amount of karma to go along with weight to prevent outrageous amounts of karma being given  
+* Option in Admin > Maintenance > Forum Maintenance > Routine to reset all user good karma to a set level while setting negative karma to 0  
+* Instead of using post count for determining when a user can give reputation, use the user's current reputation to decide  
+* "Pool" the Karma to prevent any new karma from being added to the game; more information can be found by clicking the help icon next to the option  
 
 ## Weighted Karma
 Weighted karma is a simple idea: take a user's karma and divide by the weight set in the admin panel to give that amount of karma instead of 1. So, if the weight is 15 and a user has 200 karma, they would give 13 karma.  I did not add weight to negative karma, as I am against that.  The weight system comes with two options.  
