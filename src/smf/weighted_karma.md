@@ -34,4 +34,4 @@ Questions/Comments/Concerns:
 
 ---
 ### Final Note
-This modification is for the Simple Machines Forum Software (SMF) and designed for the 2.0.x branch of the software.  This modification is not, and will not, work on a base install of the 2.1.x branch of the software.  This modification is no longer actively maintained, but occasionally receives minor updates.
+This modification is for the Simple Machines Forum Software (SMF) and designed for the 2.0.x branch of the software.  This modification is not, and will not, work on a base install of the 2.1.x branch of the software.  This modification is no longer actively maintained.
