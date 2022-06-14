@@ -13,8 +13,8 @@ This mod does a few different things, all of which can be ignored and not enable
 * "Pool" the Karma to prevent any new karma from being added to the game; more information can be found by clicking the help icon next to the option
 
 ## Weighted Karma
-Weighted karma is a simple idea: take a user's karma and divide by the weight set in the admin panel to give that amount of karma instead of 1. So, if the weight is 15 and a user has 200 karma, they would give 13 karma.  I did not add weight to negative karma, as I am against that.  The weight system comes with two options.
-* Weight to divide by
+Weighted karma is a simple idea: take a user's karma and divide by the weight set in the admin panel to give that amount of karma instead of 1. So, if the weight is 15 and a user has 200 karma, they would give 13 karma.  I did not add weight to negative karma, as I am against that.  The weight system comes with two options.  
+* Weight to divide by  
 * Max amount that can be given (prevents outrageous amounts)
 
 ### Give Karma Based on User Karma, Not Post Count
@@ -29,7 +29,7 @@ Right now, this won't work on 2.1, mostly because 2.1 did away with the karma sy
 This mod is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 Questions/Comments/Concerns:  
-* Post in the SMF support thread [here](https://www.simplemachines.org/community/index.php?topic=527025.0).  
+* Post in the SMF support thread [here](https://www.simplemachines.org/community/index.php?topic=527025.0)  
 * [GitHub Issue Tracking  ](https://github.com/snoringninja/smf-weighted-karma/issues)
 
 ---
