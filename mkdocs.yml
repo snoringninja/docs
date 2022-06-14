@@ -1,7 +1,7 @@
 site_name: Snoring Ninja Documentation
 site_url: https://docs.snoring.ninja/
-docs_dir: src
-site_dir: docs
+docs_dir: src/
+site_dir: docs/
 nav:
     - Home: index
     - Niftybot:
@@ -12,8 +12,7 @@ nav:
         - 'SMF Home': 'smf'
         - 'Weighted Karma': 'smf/weighted_karma.md'
         - 'Custom Title Limit': 'smf/custom_title_limits.md'
-theme:
-name: readthedocs
+theme: readthedocs
 markdown_extensions:
   - admonition
   - def_list
