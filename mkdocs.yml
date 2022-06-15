@@ -16,4 +16,5 @@ nav:
         - 'Custom Title Limit': 'smf/custom_title_limits.md'
 theme: readthedocs
 markdown_extensions:
+  - admonition
   - def_list
