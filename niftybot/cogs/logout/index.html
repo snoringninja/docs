@@ -136,15 +136,15 @@ bot does not restart, which is something that can be configured when using syste
 <hr />
 <h3 id="logout_2">logout</h3>
 <p><em>command</em> <strong>logout</strong>(<em>ctx</em>)  </p>
-<p>!!! important
-    This function is designed to log the bot out depending on the environment in use.  It still 
-    makes use of the logout functionality built right into discord.py, but with an extra step if using a linux 
-    environment.  </p>
-<pre><code>It is important to note that the systemd_logout functionality won't work if the user/group the bot is running under 
-requires authentication to run the following: systemctl stop SERVICENAME
-
-**Please keep that in mind.**
-</code></pre>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This function is designed to log the bot out depending on the environment in use.  It still 
+makes use of the logout functionality built right into discord.py, but with an extra step if using a linux 
+environment.  </p>
+<p>It is important to note that the systemd_logout functionality won't work if the user/group the bot is running under 
+requires authentication to run the following: systemctl stop SERVICENAME  </p>
+<p><strong>Please keep that in mind.</strong></p>
+</div>
 <ul>
 <li><strong>Parameters</strong>:<ul>
 <li><strong>ctx</strong>: discord.py Context object  </li>
