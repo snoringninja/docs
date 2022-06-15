@@ -41,21 +41,29 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="" href="../../index">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Niftybot</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../../niftybot">Niftybot Home</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../niftybot/">Niftybot Home</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../niftybot/server_config_example/">Server Config Example</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../niftybot/cogs/">Cogs</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cogs</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../niftybot/cogs/">Cogs Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../niftybot/cogs/logout/">Logout</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../niftybot/cogs/role_assignment/">Role Assignment</a>
+                </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">SMF Mods</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="" href="..">SMF Home</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../">SMF Home</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Weighted Karma</a>
     <ul class="current">
@@ -109,26 +117,32 @@
 <h6 id="current-release-151">Current Release: 1.5.1</h6>
 <h6 id="by-snoring-ninja">By: <a href="https://snoring.ninja">Snoring Ninja</a></h6>
 <hr />
-<p>This mod does a few different things, all of which can be ignored and not enabled.
-* Provides a weighted system for giving reputation only (taking reputation is always one)
-* Limit the amount of karma to go along with weight to prevent outrageous amounts of karma being given
-* Option in Admin &gt; Maintenance &gt; Forum Maintenance &gt; Routine to reset all user good karma to a set level while setting negative karma to 0
-* Instead of using post count for determining when a user can give reputation, use the user's current reputation to decide
-* "Pool" the Karma to prevent any new karma from being added to the game; more information can be found by clicking the help icon next to the option</p>
+<p>This mod does a few different things, all of which can be ignored and not enabled:</p>
+<ul>
+<li>Provides a weighted system for giving reputation only (taking reputation is always one)</li>
+<li>Limit the amount of karma to go along with weight to prevent outrageous amounts of karma being given</li>
+<li>Option in Admin &gt; Maintenance &gt; Forum Maintenance &gt; Routine to reset all user good karma to a set level while setting negative karma to 0</li>
+<li>Instead of using post count for determining when a user can give reputation, use the user's current reputation to decide</li>
+<li>"Pool" the Karma to prevent any new karma from being added to the game; more information can be found by clicking the help icon next to the option</li>
+</ul>
 <h2 id="weighted-karma">Weighted Karma</h2>
-<p>Weighted karma is a simple idea: take a user's karma and divide by the weight set in the admin panel to give that amount of karma instead of 1. So, if the weight is 15 and a user has 200 karma, they would give 13 karma.  I did not add weight to negative karma, as I am against that.  The weight system comes with two options.
-* Weight to divide by
-* Max amount that can be given (prevents outrageous amounts)</p>
+<p>Weighted karma is a simple idea: take a user's karma and divide by the weight set in the admin panel to give that amount of karma instead of 1. So, if the weight is 15 and a user has 200 karma, they would give 13 karma.  I did not add weight to negative karma, as I am against that.  The weight system comes with two options.</p>
+<ul>
+<li>Weight to divide by</li>
+<li>Max amount that can be given (prevents outrageous amounts)</li>
+</ul>
 <h3 id="give-karma-based-on-user-karma-not-post-count">Give Karma Based on User Karma, Not Post Count</h3>
 <p>One gripe I have with SMF's karma is that it relies on post count when determining if a user is able to give karma.  To go around this, I decided that I would rather use a person's karma count to determine whether or not a user is able to give karma.  This works just like it sounds and if the option is enabled it ignores the post count option and uses a user's karma count. The message box can be left blank for a default message if a user without enough karma attempts to give another user karma.  Setting a message here will be shown in place of the default message.</p>
 <h3 id="pooled-karma">"Pooled Karma"</h3>
-<p>“Pooled” Karma System: no new karma is ever introduced into the community after the initial karma is set (i.e. giving certain users enough karma to give karma a few times). This new system works in a manner that when a user gives karma, they also lose the amount they give. For example, if I have 200 karma and it’s weighted by 50 I can give four karma. When I decide to give karma, not only I increase the recipients karma by four, but I also lose four karma for a total of 196 following the giving of karma.</p>
+<p>"Pooled" Karma System: no new karma is ever introduced into the community after the initial karma is set (i.e. giving certain users enough karma to give karma a few times). This new system works in a manner that when a user gives karma, they also lose the amount they give. For example, if I have 200 karma and it’s weighted by 50 I can give four karma. When I decide to give karma, not only I increase the recipients karma by four, but I also lose four karma for a total of 196 following the giving of karma.</p>
 <h3 id="21-support">2.1 Support</h3>
 <p>Right now, this won't work on 2.1, mostly because 2.1 did away with the karma system; however, there is a modification someone wrote to port the karma system that you can modify to include the changes from this modification.  I have no plans or interest in combining the two.</p>
 <p>This mod is released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
-<p>Questions/Comments/Concerns:
-* Post in the SMF support thread <a href="https://www.simplemachines.org/community/index.php?topic=527025.0">here</a>
-* <a href="https://github.com/snoringninja/smf-weighted-karma/issues">GitHub Issue Tracking  </a></p>
+<p>Questions/Comments/Concerns:</p>
+<ul>
+<li>Post in the SMF support thread <a href="https://www.simplemachines.org/community/index.php?topic=527025.0">here</a></li>
+<li><a href="https://github.com/snoringninja/smf-weighted-karma/issues">GitHub Issue Tracking  </a></li>
+</ul>
 <hr />
 <h3 id="final-note">Final Note</h3>
 <p>This modification is for the Simple Machines Forum Software (SMF) and designed for the 2.0.x branch of the software.  This modification is not, and will not, work on a base install of the 2.1.x branch of the software.  This modification is no longer actively maintained.</p>
@@ -136,7 +150,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../niftybot/cogs/" class="btn btn-neutral float-left" title="Cogs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../" class="btn btn-neutral float-left" title="SMF Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../custom_title_limits/" class="btn btn-neutral float-right" title="Custom Title Limit">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -160,7 +174,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../niftybot/cogs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../custom_title_limits/" style="color: #fcfcfc">Next &raquo;</a></span>
